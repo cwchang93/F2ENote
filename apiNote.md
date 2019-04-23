@@ -7,7 +7,7 @@
 
 #### 登入 FTP/SFTP 設定
 
-> 1. 安裝 WinSCP
+> 1. 安裝 WinSCP(或用 fileZilla)
 > 2. 輸入
 >    SFTP 登入資料/IP/port/account:各自名稱<br>
 >    登入方式 Private Key(.ppk) (private_xinmedia_bella.ppk)
@@ -26,5 +26,11 @@
 #### React Router
 
 > <h5>指令: $node server </h5>
+> 路徑可至server.js看e.g. /api/user
 > <h5>路由的port</h5>
 > http://localhost:8080/
+
+#### 設定 host 的路徑
+
+> C:\Windows\System32\drivers\etc <br>
+> 設定 hostserver
