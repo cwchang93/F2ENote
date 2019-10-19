@@ -1,4 +1,4 @@
-###Typescript 常用的表示方式!
+### Typescript 常用的表示方式!
 
 #### Array 表示方法
 
@@ -32,3 +32,16 @@ const cow: [string] = ["jw", "hi"];
 > 因為編譯完後有同樣的變數，因此會報這個錯誤?
 
 <a href="https://medium.com/@muravitskiy.mail/cannot-redeclare-block-scoped-variable-varname-how-to-fix-b1c3d9cc8206"> </a>
+
+#### TypeScript-enum
+
+```javascript
+enum PrintMedia {
+    Newspaper = 1,
+    Newsletter,
+    Magazine,
+    Book
+  }
+  console.log(PrintMedia)
+
+```

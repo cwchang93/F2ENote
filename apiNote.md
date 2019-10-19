@@ -11,10 +11,10 @@
 > 2. 輸入
 >    SFTP 登入資料/IP/port/account:各自名稱<br>
 >    登入方式 Private Key(.ppk) (private_xinmedia_bella.ppk)
->    <img src='WinSCPsetting1.PNG'>
+>    <img src='./img/WinSCPsetting1.PNG'>
 
 > 3. 密碼部分=> 點選進階 => 身分核對 => 將金鑰存在裡面(.ppk)檔案 => 接著點選確定並儲存即可登入
->    <img src='WinSCPsetting2.PNG'>
+>    <img src='./img/WinSCPsetting2.PNG'>
 
 #### 關於 fetch
 
