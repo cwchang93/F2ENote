@@ -5,3 +5,5 @@
 // const testObj: {[key: string]: (number|boolean|string)} = { 'hi': 123, 'dj': true, 'dj2': 'dsjkl', 'ds': true }
 // const f2e: string = 'lion';
 var userName = 'JW';
+
+
