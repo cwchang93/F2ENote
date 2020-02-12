@@ -1,38 +1,38 @@
 #### 2020 Feb Note
-1. styled component的mixin怎麼用? <br>
-<a href="https://gist.github.com/carlosepp/7704cce24edba0520eb6b36d894f04ae">參考連結</a>
+
+1. styled component 的 mixin 怎麼用? <br>
+   <a href="https://gist.github.com/carlosepp/7704cce24edba0520eb6b36d894f04ae">參考連結</a>
 
 ```js
 const mixinCenter = () => `
     diplay: flex;
     align-items: center;
-`
+`;
 
 const ContainerDiv = styled.div`
-    ${mixinCenter}
-`
+  ${mixinCenter}
+`;
 ```
 
 react type node
 <a href="https://stackoverflow.com/questions/45519567/what-is-the-typescript-equivalent-of-react-proptypes-node">
 參考</a>
 
+### Hooks Rules
 
-### Hooks Rules 
 <a href="https://reactjs.org/docs/hooks-rules.html"> Hooks Rule</a>
 
 ```js
-
-
 ```
 
 #### yarn upgrade
+
 ```
 yarn upgrade [package | package@tag | package@version | --scope @scope]... [--ignore-engines] [--pattern]
 ```
 
+#### 使用 link 的方式
 
-#### 使用link的方式
 ```
 Xin-design
 $lerna run build
@@ -52,26 +52,26 @@ Done in 0.06s.
 
 ```
 
-#### 有重複react時
+#### 有重複 react 時
 
-把lib的react指向專案的React => <a href="https://reactjs.org/warnings/invalid-hook-call-warning.html#duplicate-react">參考連結</a>
+把 lib 的 react 指向專案的 React => <a href="https://reactjs.org/warnings/invalid-hook-call-warning.html#duplicate-react">參考連結</a>
 
 ```
 This problem can also come up when you use npm link or an equivalent. In that case, your bundler might “see” two Reacts — one in application folder and one in your library folder. Assuming myapp and mylib are sibling folders, one possible fix is to run npm link ../myapp/node_modules/react from mylib. This should make the library use the application’s React copy.
 
 ```
 
-
 #### 2/3 待辦
-=> dropdown 優化成TUKU下拉選單:  => 組合input模組
+
+=> dropdown 優化成 TUKU 下拉選單: => 組合 input 模組
 => 教育訓練第二季預計名單通知
-=> Q: composses & mixin差別? 差在一個要CSS module才能用嗎?
+=> Q: composses & mixin 差別? 差在一個要 CSS module 才能用嗎?
 
+Q: styled component 傳參數時要如何直接用 obj 附值~?
 
-Q: styled component傳參數時要如何直接用obj附值~?
 ```js
 const btnCSS = ({ color: string, background: string, border: string }) => {
-    return `
+  return `
     &:hover,
     &:focus {
         color: ${color};
@@ -89,34 +89,36 @@ const btnCSS = ({ color: string, background: string, border: string }) => {
 ```
 
 styled component 已讀不回
+
 ```
 檢查一下可能是因為外層包的tag跟裡面className有重覆到
 => 在className前面多加&
 
 ```
 
-skeleton AntDesign直接包在裡面即可用
-=> skeleton待優化
+skeleton AntDesign 直接包在裡面即可用
+=> skeleton 待優化
 
-#### 2/5 
-Elastic Search目前先不管
+#### 2/5
+
+Elastic Search 目前先不管
 
 後台: 不用前後端分離，不用那麼麻煩
-分離pros: 
+分離 pros:
 
-多API管理後台 
+多 API 管理後台
 
-API 不同台 
+API 不同台
 
 ansible: 管理
 
-go framework CRUD / go graphQL server 歸api
+go framework CRUD / go graphQL server 歸 api
 
 graphQL 相對不安全? => Restful 也可以跳過中間層!?
 
 盤點站長平台元件
 
-Xinshop: order 
+Xinshop: order
 
 Article
 Admin
@@ -129,58 +131,240 @@ user, product
 
 機器:伺服組
 
-機器都用centOS
+機器都用 centOS
 
-node Nginx PM2 
+node Nginx PM2
 
 API: go
 mariaDB client/server
 
-
 技能:
-1. ansible: linux指令
-2. Go Framework(CRUD): go語言熟悉、CRUD流程、migration DB
-前端驗證JWT: Json Web Token  
+
+1. ansible: linux 指令
+2. Go Framework(CRUD): go 語言熟悉、CRUD 流程、migration DB
+   前端驗證 JWT: Json Web Token
 3. Go GraphQL Server
 
 4. NextJS 部署 => nginx 設定
 5. 管理後台部署
 
-
-如何登入測試機? 
+如何登入測試機?
 反向代理 http://10.35.2.26:83/
-站長平台使用~?  => 用antDesign Pro? 
+站長平台使用~? => 用 antDesign Pro?
 
-#### openSSH用戶端在windows 找不到新增功能
-=> 重新開機 (因為剛刪除，之後要新增，有bug)
+#### openSSH 用戶端在 windows 找不到新增功能
 
-
+=> 重新開機 (因為剛刪除，之後要新增，有 bug)
 
 #### 待辦項目
+
 1. 教育訓練文件優化 - TrainingSample
-2. 教育訓練文件擬定 - 呈報給Lucha
+2. 教育訓練文件擬定 - 呈報給 Lucha
 
 3. Proxy 反向代理
-4. 
+4.
 
-#### 三月中: 教育訓練第二季講者confirm 
+#### 三月中: 教育訓練第二季講者 confirm
 
+#### CentOS
 
-#### CentOS 
 linux CentOS command
 https://www.cyberciti.biz/faq/how-to-check-os-version-in-linux-command-line/
 
 改變權限=> super
-$sudo -s
+\$sudo -s
 
+\$ssh rdadmin@10.35.2.26
 
-$ssh rdadmin@10.35.2.26 
-
- /usr/sbin/nginx 
- /usr/lib64/nginx 
- /etc/nginx     => 看起來是這個
- /usr/share/nginx   => html
+/usr/sbin/nginx 亂碼
+/usr/lib64/nginx 沒東西
+/etc/nginx => 看起來是這個
+/usr/share/nginx => html  
  /usr/share/man/man8/nginx.8.gz
 
+vi -R etc/nginx/nginx.conf
 
- vi -R etc/nginx/nginx.conf
+#### AWS
+
+\$ ssh ec2-user@54.169.189.236 -i asus_private_key.pem
+
+#### 安裝 nvm
+
+curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | bash
+
+#### 安裝 nodejs
+
+#### 調整完 nginx 的 config 要記得更新~
+
+sudo nginx -t && sudo systemctl restart nginx
+
+#### Q:疑問
+
+1. 遠端沒有權限要如何把 TFS 的檔案摳下來?
+2. 網頁上出現圖片的 => 流程: 前端打 api => api 指向放靜態檔案的那台 server
+
+3. 網頁啟動無論靜態或動態頁，一定都會有啟動服務 server run 著
+
+#### 已完成
+
+nginx 指向 domain
+
+nginx 同樣可以把網站指向特定 html 頁面 那為何還需要啟動 node 服務
+=> 使用者資料需要跟資料庫拿
+=> 當今天有修改資料時需要重 build
+
+更改該資料夾的權限
+\$chmod 755
+
+caveat 警告
+
+搜尋、新增、編輯、刪除
+
+#### CSS
+
+<a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_table_test">css table</a>
+
+#### 原生 js 寫 html 動態改變資料要如何不用砍節點就改變畫面顯示?!
+
+#### querySelectorAll('')如何選取多個值
+
+<a href="https://blog.csdn.net/Dzq_Boyka/article/details/80592346">mask 寫法</a>
+
+#### 2/10
+
+- meeting
+  腳本操作 SERVER
+  GOLANG 自帶 http 不用 nginx
+
+api 為何要 node 服務 因為要用 pm2
+因為 go 服務 build => run
+機器重啟: 重新 run
+
+- supervisor
+
+sftp 上 code
+SMB: 類似網路芳鄰東西 => 因為
+
+雲端 CDN: 鄰近節點讀到想讀照片、減少流量
+
+swoole: C 的 PHP，開源版本沒有新維護
+不用 laravel
+
+讀寫分離:
+讀 > 寫
+
+#### gin template
+
+- gin
+- gormigrate
+
+####　 go hotload
+
+### bug 寫原生 CSS 不要再用 className 了 QQ
+
+         <div class="test">test</div>
+             <div className="test">Wrap</div>
+
+### 2/11
+
+1. 本週教育訓練確認 教室 & 哲昇
+
+- 哲昇預計週三完成
+
+2. 刷完官網 + golang tutorial
+   <a href="http://xahlee.info/golang/golang_print.html">Golang Tutorial</a>
+
+3. Input 密碼要記得隱藏
+
+```
+<input type="password">
+```
+
+<a href="https://stackoverflow.com/questions/41801034/display-the-list-when-an-item-hover">CSS hover show List</a>
+
+1. 點擊前後 a 標籤要一樣顏色
+2. 讓點擊範圍變大
+3. 首頁: 置中、旁邊不要有滾輪
+
+- prettier 設定
+
+```js
+
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "editor.formatOnSave": true,
+
+```
+
+#### 右邊卷軸的罪魁禍首
+
+```css
+.index {
+  height: 100vh;
+}
+```
+
+#### why 寬度改變高度會跟著變?(transform)
+
+```css
+margin-top: 50%;
+transform: translateY(-50%);
+```
+
+#### Xinmedia 會議
+
+Elastic Search: 全文檢索
+SMB: 類似網路上的芳鄰
+Azure: CDN 費用另外加
+發展性、效能、輕量型
+Go: 非同步、非執行續、非直譯式
+
+Swoole: C => php 效能好
+Python: 爬蟲、深度學習
+
+#### go 知識
+
+```
+$go mod download
+路徑: C:\Users\chunweichang\go\pkg\mod
+
+```
+
+#### 查詢
+
+\$godoc fmt Println
+
+#### Golang
+
+composer
+
+go module: 控管專案有哪些 module
+
+傳統 go vendor
+
+go init => 產生.mod .sum
+
+#### Gin
+
+router, middleware
+
+controller
+
+- gin-sample
+
+fresh
+hotload 的概念
+
+樣板引擎的檔案改變會刷新
+.tmpl
+
+sum => 依賴
+
+mutation CRUD
+query 查詢
+
+migration 回朔
+如何 CRUD 到資料庫
