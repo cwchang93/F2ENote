@@ -368,3 +368,114 @@ query 查詢
 
 migration 回朔
 如何 CRUD 到資料庫
+
+#### MySQL
+
+<a href="https://dev.mysql.com/downloads/file/?id=492456">MySQL 下載</a>
+
+<a href="https://tableplus.com/windows">table Plus</a>
+
+<div>user: root</div>
+
+####
+
+bug
+
+```
+Left side of comma operator is unused and has no side effects.ts(2695)
+```
+
+```js
+class Group extends React.Component<I_Props> {
+  render() {
+    return (
+      <div style={{ display: "flex" }}>
+        <AppContextConsumer>
+          {ConsumerProps => {
+            console.log("this.props", this.props);
+            return (
+              <li>{this.props.name}</li>   // 這邊灰掉因為沒有包wrap
+              <button onClick={this.props.add}>+</button>
+            );
+          }}
+        </AppContextConsumer>
+      </div>
+    );
+  }
+}
+
+```
+
+#### 教育訓練
+
+1. 下載速度耗時間
+2. 內網連結有落差
+3. 麥克風使用
+4. 雷射筆、簡報器 => 之後由 F2E Link 購買
+5. 簽到表: 手寫簽到表
+6. 由我這邊寄課程相關資訊
+
+#### 教育訓練未來規劃
+
+1. 雄獅資訊行銷企劃部 from F2E
+2. 雄獅資訊期刊(先對內) =>
+
+- Medium Pro?
+
+3. 雄獅資訊學院(外部課程) => 雄獅資訊達人
+
+- concern: \\\$\$
+- 缺平台跟舞台?!
+
+#### 欣傳媒從內部到外部的案例(欣傳媒達人秀)
+
+- 課程整理:
+
+1. 文字化放上去
+2. push 到整個雄獅資訊; => 讓內部人都可以看到!
+
+- 外部課程
+
+###　第二季: 原編姓名
+
+人資特定門檻
+
+是否對外? (私底下挖角)
+
+他能得到答案，我能得到成長。
+
+寒冬一年:
+
+- RWD & AWD 開發?
+
+- PageSpeed Insights
+
+#### js regex
+
+1. <a href="https://stackoverflow.com/questions/13855335/validate-field-for-all-language-characters-through-regex/13855453"> all language regex</a>
+2. <a href="https://stackoverflow.com/questions/150033/regular-expression-to-match-non-ascii-characters/873600#873600"> 
+   </a>
+
+#### CDN
+
+<a href="https://www.jsdelivr.com/package/npm/emoji-regex?tab=collection">
+JS CDN
+</a>
+
+#### 一包 jsfunction 在 html 也可以去吃它
+
+=> 直接 CDN 進來，看 function 名稱是啥直接呼叫即可!
+
+用 emojiText 即可
+
+#### reg 多個空格會很慘
+
+```js
+const fullWidthDigit = /[\uFE30-\uFFA0] /; // 多個空格會無法check
+```
+
+#### regex useful link
+
+<a href="https://blog.typeart.cc/%E6%AD%A3%E5%89%87%E8%A1%A8%E9%81%94%E5%BC%8F-%E5%85%A8%E5%9E%8B%E8%8B%B1%E6%95%B8%E4%B8%AD%E6%96%87%E5%AD%97%E3%80%81%E5%B8%B8%E7%94%A8%E7%AC%A6%E8%99%9Funicode%E5%B0%8D%E7%85%A7%E8%A1%A8/"> useful Link</a>
+
+#### emoji=regex 套件 require 不進來
